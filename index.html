@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flappy Bird</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-->css </!-->
+    <link rel="stylesheet" href="css/fb-reset.css">
+    <link rel="stylesheet" href="css/fb-main.css">
+
+</head>
+
+<body>
+
+    <main id="main-game">
+        <!-- configura a pag html -->
+
+        <section id="screen-game">
+            <!-- conf da area do jogo -->
+
+            <section id="background-game" class="animated">
+                <!-- plano de fundo do jogador -->
+
+                <section id="fly-area-game">
+                    <!--limite da area do jogador -->
+
+                    <div id="ceiling" class="animated">
+
+                    </div>
+                    <!-- blocos/parede do jogo -->
+
+                    <div id="player" class="bird animated">
+
+                    </div>
+                    <!-- sprite do jogador -->
+
+                    <div id="bigscore">
+
+                    </div>
+                    <!-- score do jogo -->
+
+                    <div id="splash">
+
+                    </div>
+                    <!-- tela inicial -->
+
+                    <div id="scoreboard">
+                        <div id="medal">
+
+                        </div>
+                        <!-- medalha conquista -->
+
+                        <div id="currentscore">
+
+                        </div>
+                        <!-- pontuacao obtida-->
+
+                        <div id="highscore">
+
+                        </div>
+                        <!--  best score-->
+
+                        <div id="replay">
+                            <img src="assets/replay.png" alt="replay" height="70" width="115">
+                        </div>
+                        <!-- Replay -->
+
+                    </div>
+                    <!-- quadro de pontuacao -->
+
+                    <!-- canos aparece aqui atraves de um array -->
+
+                </section>
+
+            </section>
+
+            <section id="footer-game" class="animated"></section>
+            <!-- rodape -->
+        </section>
+
+    </main>
+    <!-- Js e APIs -->
+    <script src="js/fb-jquery.min.js"></script>
+    <script src="js/fb-jquery.transit.min.js"></script>
+    <script src="js/fb-buzz.min.js"></script>
+    <script src="js/fb-main.js"></script>
+</body>
+
+</html>

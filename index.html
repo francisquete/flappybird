@@ -1,90 +1,65 @@
 <!DOCTYPE html>
-<html lang=pt-br">
+<html>
 
 <head>
-    <title>Flappy Bird</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!-->css </!-->
-    <link rel="stylesheet" href="css/fb-reset.css">
-    <link rel="stylesheet" href="css/fb-main.css">
+    <title>FlappyBird</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
+    <!-- // CSS -->
+    <link href="css/fb-reset.css" rel="stylesheet">
+    <!-- CSS Reset-->
+    <link href="css/fb-main.css" rel="stylesheet">
+    <!-- CSS Principal -->
 </head>
 
 <body>
-
+    <!-- // HTML5 -->
     <main id="main-game">
-        <!-- configura a pag html -->
-
+        <!-- Configuração da pag. HTML -->
         <section id="screen-game">
-            <!-- conf da area do jogo -->
-
+            <!-- Configuração da área do jogo -->
             <section id="background-game" class="animated">
-                <!-- plano de fundo do jogador -->
-
-                <section id="fly-area-game">
-                    <!--limite da area do jogador -->
-
-                    <div id="ceiling" class="animated">
-
-                    </div>
-                    <!-- blocos/parede do jogo -->
-
-                    <div id="player" class="bird animated">
-
-                    </div>
-                    <!-- sprite do jogador -->
-
-                    <div id="bigscore">
-
-                    </div>
-                    <!-- score do jogo -->
-
-                    <div id="splash">
-
-                    </div>
-                    <!-- tela inicial -->
-
+                <!-- Plano de fundo do jogo -->
+                <section id="flyarea-game">
+                    <!-- Área limite para o jogador -->
+                    <div id="ceiling" class="animated"></div>
+                    <!-- Blocos/parede do topo -->
+                    <div id="player" class="bird animated"></div>
+                    <!-- Área limite para o jogador -->
+                    <div id="bigscore"></div>
+                    <!-- Marcação do score no topo -->
+                    <div id="splash"></div>
+                    <!-- Splashscreen - Tela inicial "Get ready" -->
                     <div id="scoreboard">
-                        <div id="medal">
-
-                        </div>
-                        <!-- medalha conquista -->
-
-                        <div id="currentscore">
-
-                        </div>
-                        <!-- pontuacao obtida-->
-
-                        <div id="highscore">
-
-                        </div>
-                        <!--  best score-->
-
-                        <div id="replay">
-                            <img src="assets/replay.png" alt="replay" height="70" width="115">
-                        </div>
-                        <!-- Replay -->
-
+                        <!-- Quadro de pontuação -->
+                        <div id="medal"></div>
+                        <!-- Medalha conquistada -->
+                        <div id="currentscore"></div>
+                        <!-- Pontuação obtida -->
+                        <div id="highscore"></div>
+                        <!-- Maior pontuação por Cookies -->
+                        <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                        <!-- IMG para recomeçar -->
                     </div>
-                    <!-- quadro de pontuacao -->
-
-                    <!-- canos aparece aqui atraves de um array -->
-
+                    <!-- Pipes ou Canos, vão aparecendo aqui por meio de um Array -->
                 </section>
-
             </section>
-
             <section id="footer-game" class="animated"></section>
-            <!-- rodape -->
+            <!-- Rodapé ou base do jogo -->
         </section>
-
     </main>
-    <!-- Js e APIs -->
+
+    <!-- // JS & APIs -->
     <script src="js/fb-jquery.min.js"></script>
+    <!-- JQuery -->
     <script src="js/fb-jquery.transit.min.js"></script>
+    <!-- JQuery transições -->
     <script src="js/fb-buzz.min.js"></script>
+    <!-- API para áudio -->
     <script src="js/fb-main.js"></script>
+    <!-- JS principal - Lógica -->
+
 </body>
 
 </html>
